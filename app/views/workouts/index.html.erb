@@ -1,1 +1,6 @@
-<h1>Testing</h1>
+<h1> This is the Workouts Index Placeholder </h1>
+
+<% @workouts.each do |workout| %>
+<%= link_to workout.date, workout %></br>
+<%= workout.workout %></br>
+<% end %>
