@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>WorkoutApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+	<head>
+		<title>Workout Log Application</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
 <body>
+	<nav class="navbar navbar-default">	
+		<div class="container">	
+			<%= link_to "Workout Log", root_path %></br>
+			<%= link_to "New Workout", new_workout_path %>
+		</div><!-- /.container-fluid -->
+	</nav>	
 
-<%= yield %>
+
+	<div class="container">	
+	<%= yield %>
+	</div>
 
 </body>
-</html>
+</html>	
+
+
+
+
+
+
+
+
