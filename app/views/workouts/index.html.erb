@@ -1,6 +1,6 @@
-<h1> This is the Workouts Index Placeholder </h1>
+<h1> All Workouts </h1>
 
 <% @workouts.each do |workout| %>
-<%= link_to workout.date, workout %></br>
+<%= link_to workout.date.strftime("%A, %B %d"), workout %></br>
 <%= workout.workout %></br>
 <% end %>
